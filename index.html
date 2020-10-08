@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #fff;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            color: 000;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        button {
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            margin: 10px 10px 0 0;
+            padding: 0 15px 0 15px;
+            border-radius: 4px;
+            height: 36px;
+            min-width: 54px;
+            color: #5F6368;
+        }
+
+        nav {
+            height: 2em;
+            padding-top: 15px;
+        }
+
+        nav a,
+        footer a {
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #000;
+            opacity: 0.75;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            background-color: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 5vh;
+            width: 100vw;
+        }
+
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #nav-right {
+            float: right
+        }
+
+        #nav-left {
+            float: left;
+        }
+
+        #searchbar-plus {
+            margin: 0 auto;
+            padding: 20vh 0 0 0;
+        }
+
+        #logo {
+            display: block;
+            width: 35%;
+            max-width: 272px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        #searchbar {
+            display: flex;
+            width: 50vw;
+            height: 1.5em;
+            margin: 0 auto;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 5px;
+            overflow-y: hidden;
+        }
+
+        #search-input {
+            display: block;
+            width: 40vw;
+            height: auto;
+            margin: 0 0 0 0;
+            padding: 5px;
+            border: none;
+        }
+
+        #buttons-container {
+            padding-top: 12px;
+            display: block;
+            width: 285px;
+            margin: 0 auto;
+        }
+
+
+        #subtitle {
+            padding: 5px;
+            display: block;
+            width: 37em;
+            margin: 0 auto;
+        }
+
+        #footer-left {
+            float: left;
+
+        }
+
+        #footer-right {}
+    </style>
+</head>
+
+<body>
+    <div id="page-container">
+        <nav>
+            <div id="nav-left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+            <div id="nav-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+            </div>
+        </nav>
+
+        <main>
+            <div id="searchbar-plus">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    alt="Google logo" id="logo"><br>
+                <div id="searchbar">
+                    <input type="text"
+                        placeholder="Search Google or type a URL" id="search-input"></input>
+                </div>
+                <div id="buttons-container">
+                    <button id="search">Google Search</button>
+                    <button id="lucky">I'm Feeling Lucky</button></div><br>
+                <p id="subtitle">Help New York fight COVID-19 with the Exposure Notifications System. <a
+                        href="https://ny.gov/covidalerts">Learn how</a></p>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div id="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

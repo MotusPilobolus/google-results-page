@@ -15,7 +15,8 @@
         }
 
         p {
-            font-size: 0.8em;
+            font-size: 1em;
+            color: 000;
         }
 
         button {
@@ -56,37 +57,30 @@
             width: 100vw;
         }
 
-        #page-container {
-            position: relative;
-            min-height: 100vh;
-        }
+        #nav-bar {
+            padding: 23px 0 0 23px;
+            display: flex;
+            flex-direction: column;
+            align-content:flex-end;
 
-        #nav-right {
-            float: right
-        }
 
-        #nav-left {
-            float: left;
         }
-
-        #searchbar-plus {
-            margin: 0 auto;
-            padding: 20vh 0 0 0;
-        }
+#nav-top {
+    display: flex;
+    justify-content:flex-start;
+}
 
         #logo {
-            display: block;
-            width: 35%;
-            max-width: 272px;
-            margin: 0 auto;
+            display: relative;
+            width: 95px;
             padding: 5px;
         }
 
         #searchbar {
             display: flex;
             width: 50vw;
-            height: 1.5em;
-            margin: 0 auto;
+            height: 2em;
+            margin-left: 30px;
             border: 1px solid #dfe1e5;
             border-radius: 24px;
             padding: 5px;
@@ -94,64 +88,43 @@
         }
 
         #search-input {
+            -webkit-appearance: none;
             display: block;
             width: 40vw;
             height: auto;
             margin: 0 0 0 0;
             padding: 5px;
             border: none;
-        }
-
-        #buttons-container {
-            padding-top: 12px;
-            display: block;
-            width: 285px;
-            margin: 0 auto;
-        }
-
-
-        #subtitle {
-            padding: 5px;
-            display: block;
-            width: 37em;
-            margin: 0 auto;
-        }
-
-        #footer-left {
-            float: left;
+            color: 000;
 
         }
-
-        #footer-right {}
     </style>
 </head>
 
 <body>
     <div id="page-container">
-        <nav>
-            <div id="nav-left">
-                <a href="#">About</a>
-                <a href="#">Store</a>
-            </div>
-            <div id="nav-right">
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-            </div>
-        </nav>
-
         <main>
-            <div id="searchbar-plus">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                    alt="Google logo" id="logo"><br>
-                <div id="searchbar">
-                    <input type="text"
-                        placeholder="Search Google or type a URL" id="search-input"></input>
+            <div id="nav-bar">
+                <div id="nav-top">
+                    <div id="nav-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                            alt="Google logo" id="logo"></div>
+                    <div id="searchbar">
+                        <input type="text" placeholder="Coding in CSS" id="search-input"></input>
+                    </div>
                 </div>
-                <div id="buttons-container">
-                    <button id="search">Google Search</button>
-                    <button id="lucky">I'm Feeling Lucky</button></div><br>
-                <p id="subtitle">Help New York fight COVID-19 with the Exposure Notifications System. <a
-                        href="https://ny.gov/covidalerts">Learn how</a></p>
+                <div id="nav=lower">
+                    <div id="nav-links">
+                        <a href="#">All</a>
+                        <a href="#">Videos</a>
+                        <a href="#">Images</a>
+                        <a href="#">News</a>
+                        <a href="#">Shopping</a>
+                        <a href="#">More</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Tools</a>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
